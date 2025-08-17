@@ -50,8 +50,15 @@ Update the API URL in your frontend code to point to your deployed backend:
 
 ```javascript
 // In frontend/src/App.jsx
-const API_URL = import.meta.env.VITE_API_URL || 'https://your-backend-url.onrender.com';
+// The code now handles trailing slashes to prevent double-slash issues
+let API_URL = import.meta.env.VITE_API_URL || 'https://your-backend-url.onrender.com';
+// Remove trailing slash if present to avoid double slash in API calls
+if (API_URL.endsWith('/')) {
+  API_URL = API_URL.slice(0, -1);
+}
 ```
+
+**Important Note**: When setting the `VITE_API_URL` environment variable, make sure it does not have a trailing slash. If it does, the code will now handle it, but it's better to set it without the trailing slash (e.g., `https://your-backend-url.onrender.com` instead of `https://your-backend-url.onrender.com/`).
 
 ## Testing the Deployment
 
