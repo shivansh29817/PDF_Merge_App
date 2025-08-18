@@ -18,7 +18,9 @@ A web application that allows users to perform various operations on PDF files, 
 - **File Upload**: react-dropzone, multer
 
 ##Desktop View
-![Uploading {BE7F6A48-AD26-496A-AE1E-B0E7E6ECC7B4}.png…]()
+
+<img width="1792" height="863" alt="{BE7F6A48-AD26-496A-AE1E-B0E7E6ECC7B4}" src="https://github.com/user-attachments/assets/85640a53-0bc5-4f38-8fdd-e548c8faccc7" />
+
 
 
 ## Project Structure
