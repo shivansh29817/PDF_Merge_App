@@ -17,6 +17,10 @@ A web application that allows users to perform various operations on PDF files, 
 - **PDF Processing**: pdf-lib
 - **File Upload**: react-dropzone, multer
 
+##Desktop View
+![Uploading {BE7F6A48-AD26-496A-AE1E-B0E7E6ECC7B4}.png…]()
+
+
 ## Project Structure
 
 ```
